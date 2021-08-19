@@ -70,9 +70,4 @@ body{
     grid-column: span 4;
     background-color: rgba(55, 55, 55,.75);
 }
-@media only screen and (min-width: 600px) {
-    .cal{
-       width: 100%;
-    }
-  }
   
