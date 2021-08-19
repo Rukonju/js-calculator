@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+*,*::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    font-weight: normal;
+    
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(180, 169, 158);
+}
+.heading{
+    text-align: center;
+    
+}
+.cal-name{
+    color: rgb(238, 30, 30);
+}
+.calculator{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    /* min-height: 100vh; */
+    grid-template-columns: repeat(4,90px);
+    grid-template-rows: repeat(7,70px);
+    width: fit-content;
+    margin: auto;
+    border: 5px solid white;
+    border-radius:10px ;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: turquoise;
+    box-shadow: 2px 3px 30px rgb(86, 100, 99);
+    
+}
+.calculator > button{
+   cursor: pointer;
+   font-size: 1.75rem;
+   border: 1px solid white;
+   outline: none;
+   background-color: rgba(255, 255, 255,.50);
+   margin: 5px;
+   border-radius: 10px;
+
+}
+.calculator > button:hover{
+    background-color: rgba(255, 255, 255,.75);
+}
+.span-2{
+    grid-column: span 2;
+}
+
+.previous{
+    color: rgba(185, 185, 185, 0.795);
+    text-align: right;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 10px 10px 0px 0px ;
+    grid-column: span 4;
+    background-color: rgba(55, 55, 55, 0.75);
+}
+.current{
+    color: ghostwhite;
+    text-align: right;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px ;
+    grid-column: span 4;
+    background-color: rgba(55, 55, 55,.75);
+}
+@media only screen and (min-width: 600px) {
+    .cal{
+       width: 100%;
+    }
+  }
+  
